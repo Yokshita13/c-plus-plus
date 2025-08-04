@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class WashingMachine {
+  public:
+    void start() {
+        addWater();
+        addDetergent();
+        wash();
+        spin();
+        cout << "Washing complete!" << endl;
+    }
+
+  private:
+    void addWater() {
+        cout << "Water added" << endl;
+    }
+
+    void addDetergent() {
+        cout << "Detergent added" << endl;
+    }
+
+    void wash() {
+        cout << "Washing clothes..." << endl;
+    }
+
+    void spin() {
+        cout << "Spinning clothes..." << endl;
+    }
+};
